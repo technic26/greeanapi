@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Green API on Flask</title>
+</head>
+<body>
+    <h2>Green API on Flask</h2>
+    <br></br>	
+<div class="parent-box">
+	<div>
+	<form  method="post">
+	<input id="apiUrl" type="string" placeholder="apiUrl" name="apiUrl" class="left-box">
+	<textarea class="textbox">{{output}}</textarea>
+	</div>
+	<br></br>
+	<div>
+	<input id="idInstance" type="number" placeholder="idInstance" name="idInstance" class="left-box">
+	</div>
+	<br></br>
+	<div>
+	<input id="apiTokenInstance" type="string" placeholder="apiTokenInstance" name="apiTokenInstance" class="left-box">
+	</div>
+	<br></br>
+	<div>
+	<button type="submit" name="submit_button" value="getSettings" class="left-box">getSettings</button>
+	</div>
+	<br></br>
+	<div>
+	<button type="submit" name="submit_button" value="getStateInstance" class="left-box">getStateInstance</button>
+	</div>
+	<br></br>
+	<br></br>
+	<br></br>
+	<div>
+	<input id="chatId" type="string" placeholder="chatId" name="chatId1" class="left-box">
+	</div>
+	<br></br>
+        <div>
+        <input id="message" type="string" placeholder="message" name="message" class="left-bigbox">
+	<br></br>
+	<br></br>
+	<br></br>
+        <button type="submit" name="submit_button" value="SendMessage" class="left-box">SendMessage</button>
+        </div>
+        <br></br>
+        <br></br>
+        <br></br>
+        <div>
+        <input id="chatId" type="string" placeholder="chatId" name="chatId2" class="left-box">
+        </div>
+        <br></br>
+        <div>
+        <input id="urlFile" type="string" placeholder="urlFile" name="urlFile" class="left-bigbox">
+        <br></br>
+        <br></br>
+        <br></br>
+        <button type="submit" name="submit_button" value="SendFileByUrl" class="left-box">SendFileByUrl</button>
+        </div>
+
+	</form>
+</div>
+
+<style>
+  .parent-box {
+    position: relative; 
+    height: 100px;
+  }
+
+  .left-box {
+    position: absolute;
+    left: 0;      
+    display: block;
+    width: 300px;
+  }
+
+  .left-bigbox {
+    position: absolute;
+    left: 0;          
+    display: block;
+    height: 100px;
+    width: 300px;
+  }
+
+
+  .right-box {
+    position: absolute;
+    /*right: 0;          /* Aligns perfectly to the right edge */
+    left: 130px
+  }
+
+  .textbox {
+	  position: absolute;
+
+	    top: 0px;
+	    right: 0px;
+	    display: block;
+	    height: 500px;
+	    width: 500px;
+    }
+
+</style>
+</body>
+</html>
+
