@@ -61,4 +61,4 @@ def contact():
             return render_template("index.html", output=req.text) 
 
     elif request.method == 'GET':
-        return render_template("index.html", output='Select request', idInstance=idInstance, apiTokenInstance=apiTokenInstance)
+        return render_template("index.html", output='Select request')
